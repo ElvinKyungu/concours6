@@ -1,9 +1,10 @@
+/* Elvin Code */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-
+/* Couleurs */
   /*========== Colors ==========*/
   --first-color: #069C54;
   --first-color-alt: #048654;
@@ -13,7 +14,7 @@
   --body-color: #FBFEFD;
   --container-color: #FFFFFF;
 
-  /*========== Font and typography ==========*/
+  /*========== Font et typographie ==========*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
@@ -27,7 +28,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes ==========*/
+  /*========== Marges ==========*/
   --mb-1: .5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -105,14 +106,25 @@ img{
   max-width: 100%;
   height: auto;
 }
-/* .hide_mobile{
-  display: block;
+
+.animate-marquee {
+  animation: slide 20s linear infinite;
 }
-@media screen and (max-width: 768px){
-  .hide_mobile{
-    display: none;
+@keyframes slide {
+  0% {
+      transform: translate(0)
   }
-} */
+
+  to {
+      transform: translate(-100%)
+  }
+}
+
+@media screen and (min-height: 721px) {
+  .home__container {
+      height: 640px;
+  }
+}
 .stars{
   color: #EDBB0E;
 }
