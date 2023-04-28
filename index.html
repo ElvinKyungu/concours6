@@ -10,6 +10,9 @@
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!-- Tailwindcss -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
         <title>African food</title>
     </head>
     <body>
@@ -31,8 +34,6 @@
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-
-                        <li><i class='bx icon-moon-o change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
 
@@ -362,7 +363,31 @@
                     </div>
                 </div>
             </section>
-
+            <!-- ROND -->
+            <section>
+                <div class="relative mt-6 overflow-hidden">
+                    <div class="absolute -inset-x-1 top-[-25.5%] z-[1] h-2/4 scale-y-75 scale-x-125 rounded-[100%] bg-gray-50 2xl:scale-y-95"></div>
+                    
+                    <div class="animate-marquee sm:marquee-15 xl:marquee-30 w-full transition duration-500">
+                        <div class="grid h-96 w-[350vw] grid-cols-12 gap-1 sm:h-[40rem] sm:w-[300vw] lg:w-[200vw] 2xl:h-[60rem]">
+                            <img class="cursor-pointer h-full w-full object-cover" src="assets/images/marque.jpg" width="826" height="1239"/>
+                            <img class="cursor-pointer col-span-2 h-full w-full object-cover" src="assets/images/marque1.jpg" width="826" height="1239"/>
+                            <img class="cursor-pointer h-full w-full object-cover" src="assets/images/marque2.jpg" width="826" height="1239"/>
+                            <img class="cursor-pointer h-full w-full object-cover" src="assets/images/marque3.jpg" width="826" height="1239"/>
+                            <img class="cursor-pointer col-span-2 h-full w-full object-cover" src="assets/images/marque4.jpg" width="1800" height="1197"/>
+                            <!-- <img class="cursor-pointerh-full w-full object-cover" src="images/cover-one.webp" width="826" height="1237"/> -->
+                            <img class="cursor-pointer h-full w-full object-cover" src="assets/images/marque5.jpg" width="826" height="1239"/>
+                            <img class="cursor-pointer h-full w-full object-cover" src="assets/images/marque.jpg" width="826" height="1239"/>
+                            <img class="cursor-pointer h-full w-full object-cover" src="assets/images/marque1.jpg" width="826" height="1237"/>
+                            <img class="cursor-pointer col-span-2 h-full w-full object-cover" src="assets/images/marque3.jpg" width="2000" height="1334"/>
+                        </div>
+                    </div>
+                    <div  class="absolute -inset-x-1 bottom-[-25.5%] z-[1] h-2/4 scale-y-75 scale-x-125 rounded-[100%] bg-gray-50 2xl:scale-y-95"></div>
+                </div>
+                <div class="">
+                    <img src="assets/images/logocloud.svg" class="m-auto w-1/2" alt="" srcset="">
+                </div>
+            </section>
             <!--========== MENU ==========-->
             <section class="menu section bd-container" id="menu">
                 <span class="section-subtitle">Spécial</span>
@@ -507,6 +532,6 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>f
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
